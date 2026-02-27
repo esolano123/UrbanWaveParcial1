@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanWave | Moda Urbana</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('/img/rockymountian.webp') ;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+    }
+
+    .product-card img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .cta-section {
+      background: black;
+      color: white;
+      padding: 80px 0;
+    }
+  </style>
+</head>
+<body>
+
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">UrbanWave</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="container">
+    <h1 class="display-3 fw-bold">Nueva Colección 2026</h1>
+    <p class="lead mt-3">Streetwear auténtico. Actitud real.</p>
+    <a href="catalogo.html" class="btn btn-light btn-lg mt-4 px-5">Explorar Ahora</a>
+  </div>
+</section>
+
+
+<section class="container py-5 text-center">
+  <h2 class="fw-bold mb-4">Más que ropa. Es actitud.</h2>
+  <p class="lead">
+    UrbanWave fusiona diseño urbano con comodidad premium.
+    Creamos prendas que hablan por ti antes de que digas una palabra.
+  </p>
+</section>
+
+
+<section class="container py-5">
+  <h2 class="text-center fw-bold mb-5">Destacados</h2>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="/img/SunfadeHoodie.png" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sunfade Hoodie</h5>
+          <p class="text-muted">$45.00 USD</p>
+          <a href="catalogo.html" class="btn btn-dark w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="/img/greensneakers.jpeg" class="card-img-top" style="width:100%; height:300px; object-fit:cover; object-position:top;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Urban Core Sneakers</h5>
+          <p class="text-muted">$499 MXN</p>
+          <a href="catalogo.html" class="btn btn-dark w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card product-card shadow-sm">
+        <img src="/img/tigerpants.jpeg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cargo Street Pants</h5>
+          <p class="text-muted">$1,099 MXN</p>
+          <a href="catalogo.html" class="btn btn-dark w-100">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <div class="feature-icon">🚚</div>
+        <h5 class="mt-3">Envíos Nacionales</h5>
+        <p>Entrega rápida en todo México.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-icon">💳</div>
+        <h5 class="mt-3">Pago Seguro</h5>
+        <p>Compra protegida y confiable.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-icon">⭐</div>
+        <h5 class="mt-3">Calidad Premium</h5>
+        <p>Materiales duraderos y cómodos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-section text-center">
+  <div class="container">
+    <h2 class="fw-bold">Únete al movimiento UrbanWave</h2>
+    <p class="lead mt-3">Descubre la colección completa ahora.</p>
+    <a href="catalogo.html" class="btn btn-light btn-lg mt-3 px-5">Ver Catálogo</a>
+  </div>
+</section>
+
+
+<footer class="bg-black text-white text-center py-4">
+  © 2026 UrbanWave | Moda Urbana
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #000 !important;
+}
+
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("https://images.unsplash.com/photo-1516826957135-700dedea698c");
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+/* SECTIONS */
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/* PRODUCT CARDS */
+.product-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: white;
+}
+
+.product-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.price {
+  font-weight: 600;
+  color: #111;
+}
