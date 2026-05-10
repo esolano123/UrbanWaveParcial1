@@ -113,6 +113,8 @@ function continueAsGuest() {
     })
   );
 
+  alert('Entraste como invitado');
+
   window.location.href = 'index.html';
 
 }
