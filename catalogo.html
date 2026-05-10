@@ -96,7 +96,7 @@
     Descubre nuestra colección completa de streetwear.
   </p>
 
-  <!-- PRODUCTS CONTAINER -->
+  <!-- PRODUCTS -->
 
   <div class="row g-4" id="productsContainer">
 
@@ -129,6 +129,8 @@ async function loadProducts() {
     const response = await fetch(API_URL);
 
     const products = await response.json();
+
+    console.log(products);
 
     productsContainer.innerHTML = '';
 
@@ -165,8 +167,8 @@ async function loadProducts() {
               </p>
 
               <button
-                class="btn btn-dark mt-auto"
-                onclick='addToCart(${JSON.stringify(product)})'
+                class="btn btn-dark mt-auto add-cart-btn"
+                data-product='${JSON.stringify(product)}'
               >
                 Agregar al carrito
               </button>
@@ -181,16 +183,36 @@ async function loadProducts() {
 
     });
 
+    // ADD EVENT LISTENERS
+
+    document.querySelectorAll('.add-cart-btn').forEach(button => {
+
+      button.addEventListener('click', () => {
+
+        const product = JSON.parse(button.dataset.product);
+
+        addToCart(product);
+
+      });
+
+    });
+
   } catch (error) {
 
     console.error('Error loading products:', error);
 
     productsContainer.innerHTML = `
+
       <div class="col-12">
+
         <div class="alert alert-danger text-center">
+
           Error cargando productos.
+
         </div>
+
       </div>
+
     `;
 
   }
