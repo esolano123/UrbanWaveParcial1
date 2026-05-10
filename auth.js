@@ -103,3 +103,16 @@ if (loginForm) {
   });
 
 }
+
+function continueAsGuest() {
+
+  localStorage.setItem(
+    'loggedUser',
+    JSON.stringify({
+      name: 'Invitado'
+    })
+  );
+
+  window.location.href = 'index.html';
+
+}
