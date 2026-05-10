@@ -25,38 +25,36 @@ async function loadProducts() {
           <div class="card h-100 shadow product-card">
 
             <img
-              src="${product.imagen}"
+              src="${product.image}"
               class="card-img-top"
-              alt="${product.nombre}"
+              alt="${product.name}"
               style="height:300px; object-fit:cover;"
             >
 
             <div class="card-body d-flex flex-column">
 
               <h5 class="card-title">
-                ${product.nombre}
+                ${product.name}
               </h5>
 
               <p class="card-text text-muted">
-                ${product.descripcion || ''}
+                ${product.category || ''}
               </p>
 
               <h6 class="fw-bold mb-3">
-                $${product.precio}
+                $${product.price} MXN
               </h6>
 
-              <p>
+              <p class="text-muted">
                 Stock: ${product.stock}
               </p>
 
-            <button
+              <button
                 class="btn btn-dark mt-auto"
                 onclick='addToCart(${JSON.stringify(product)})'
-            >
+              >
                 Agregar al carrito
-            </button>
-
-              
+              </button>
 
             </div>
 
@@ -80,14 +78,14 @@ loadProducts();
 
 function addToCart(product) {
 
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-  
-    cart.push(product);
-  
-    localStorage.setItem('cart', JSON.stringify(cart));
-  
-    alert(`${product.nombre} agregado al carrito`);
-  
-    updateCartCount();
-  
-  }
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  cart.push(product);
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  alert(`${product.name} agregado al carrito`);
+
+  updateCartCount();
+
+}
